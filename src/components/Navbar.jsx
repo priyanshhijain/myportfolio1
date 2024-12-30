@@ -111,20 +111,12 @@ const Navbar = () => {
             <a
               target="blank__"
               className="flex justify-center items-center w-full text-gray-300"
-              href="priyanshij251@gmail.com"
+              href="https://mail.google.com/"
             >
               Email <HiOutlineMail size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-center items-center mr-[-100px] hover:mr-[-10px] duration-300 bg-[#565f69] text-center">
-            <a
-              target="blank__"
-              className="flex justify-center items-center w-full text-gray-300"
-              href="/"
-            >
-              Resume <BsFillPersonLinesFill size={30} />
-            </a>
-          </li>
+        
         </ul>
       </div>
     </div>
