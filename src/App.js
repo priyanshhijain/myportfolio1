@@ -12,11 +12,12 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <Experience/>
       <Skills />
       <Work />
       <Contact />
       {/* <kdhf?/> */}
-      <Experience/>
+  
     </div>
   );
 }

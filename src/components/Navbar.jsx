@@ -9,35 +9,37 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
-      {/* menu */}
-      <ul className="hidden md:flex">
-        <li>
+    <div className="fixed w-full h-[80px] flex justify-end items-center px-4 bg-[#0a192f] text-gray-300">
+      {/* Menu */}
+      <ul className="hidden md:flex justify-end items-center">
+        <li className="mx-4">
           <Link to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li>
+        <li className="mx-4">
           <Link to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li>
+        <li className="mx-4">
+          <Link to="experience" smooth={true} duration={500}>
+            Experience
+          </Link>
+        </li>
+        <li className="mx-4">
           <Link to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li>
+
+        <li className="mx-4">
           <Link to="work" smooth={true} duration={500}>
             Work
           </Link>
         </li>
-        <li>
-          <Link to="work" smooth={true} duration={500}>
-            Experience
-          </Link>
-        </li>
-        <li>
+      
+        <li className="mx-4">
           <Link to="contact" smooth={true} duration={500}>
             Contact
           </Link>
@@ -54,7 +56,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center text-center"
         }
       >
         <li className="py-6 text-4xl">
@@ -63,25 +65,21 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          {" "}
           <Link onClick={handleClick} to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          {" "}
           <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          {" "}
           <Link onClick={handleClick} to="work" smooth={true} duration={500}>
             Work
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          {" "}
           <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
             Contact
           </Link>
@@ -89,20 +87,39 @@ const Navbar = () => {
       </ul>
 
       {/* Social icons */}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
+      <div className="hidden lg:flex fixed flex-col top-[35%] right-0">
         <ul>
-        <li className="w-[160px] h-[60px]  flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#eb5fa0]">
-            <a target="blank__" className="flex justify-between items-center w-full text-gray-300" href="https://www.linkedin.com/in/priyanshi-jain-831b14268/"> Linkedin{" "} <FaLinkedin size={30} /></a>
+          <li className="w-[160px] h-[60px] flex justify-center items-center mr-[-100px] hover:mr-[-10px] duration-300 bg-[#eb5fa0] text-center">
+            <a
+              target="blank__"
+              className="flex justify-center items-center w-full text-gray-300"
+              href="https://www.linkedin.com/in/priyanshi-jain-831b14268/"
+            >
+              Linkedin <FaLinkedin size={30} />
+            </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#4f6b4f67]">
-            <a target="blank__" className="flex justify-between items-center w-full text-gray-300" href="https://github.com/priyanshi123456?tab=repositories"> Github{" "} <FaGithub size={30} /></a>
+          <li className="w-[160px] h-[60px] flex justify-center items-center mr-[-100px] hover:mr-[-10px] duration-300 bg-[#4f6b4f67] text-center">
+            <a
+              target="blank__"
+              className="flex justify-center items-center w-full text-gray-300"
+              href="https://github.com/priyanshi123456?tab=repositories"
+            >
+              Github <FaGithub size={30} />
+            </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#68b2b8]">
-            <a target="blank__" className="flex justify-between items-center w-full text-gray-300" href="priyanshij251@gmail.com"> Email{" "} <HiOutlineMail size={30} /></a>
+          <li className="w-[160px] h-[60px] flex justify-center items-center mr-[-100px] hover:mr-[-10px] duration-300 bg-[#68b2b8] text-center">
+            <a
+              target="blank__"
+              className="flex justify-center items-center w-full text-gray-300"
+              href="priyanshij251@gmail.com"
+            >
+              Email <HiOutlineMail size={30} />
+            </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
-            <a target="blank__"
-              className="flex justify-between items-center w-full text-gray-300"
+          <li className="w-[160px] h-[60px] flex justify-center items-center mr-[-100px] hover:mr-[-10px] duration-300 bg-[#565f69] text-center">
+            <a
+              target="blank__"
+              className="flex justify-center items-center w-full text-gray-300"
               href="/"
             >
               Resume <BsFillPersonLinesFill size={30} />
